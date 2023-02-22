@@ -54,22 +54,21 @@
           </ul>
         </address>
       </div>
-        
-      <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-        <svg
-                      class="mobile-menu-icon"
-                      width="32"
-                      height="22"
-                      aria-label="mobile-menu"
-                    >
-                      <use href="./images/icons.svg#icon-menu"></use>
-                    </svg>
-        </button>
 
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          class="mobile-menu-icon"
+          width="32"
+          height="22"
+          aria-label="mobile-menu"
+        >
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
     </header>
     <main>
       <section class="hero">
@@ -144,37 +143,43 @@
             <li class="examples-item">
               <a href="" class="link examples-link"
                 ><img
-                class="example-image"
-                srcset="./images/examples/examples1_360.jpg 1x,
-                ./images/examples/examples1_360.jpg 2x"
-                src="./images/examples/examples1_360.jpg"
-                alt="site"
-                width="360"
-                loading="lazy"
+                  class="example-image"
+                  srcset="
+                    ./images/examples/examples1_360.jpg 1x,
+                    ./images/examples/examples1_360.jpg 2x
+                  "
+                  src="./images/examples/examples1_360.jpg"
+                  alt="site"
+                  width="360"
+                  loading="lazy"
               /></a>
             </li>
             <li class="examples-item">
               <a href="" class="link examples-link"
                 ><img
                   class="example-image"
-                srcset="./images/examples/examples2_360.jpg 1x,
-                ./images/examples/examples2_360.jpg 2x"
-                src="./images/examples/examples2_360.jpg"
-                alt="mobile app"
-                width="360"
-                loading="lazy"
+                  srcset="
+                    ./images/examples/examples2_360.jpg 1x,
+                    ./images/examples/examples2_360.jpg 2x
+                  "
+                  src="./images/examples/examples2_360.jpg"
+                  alt="mobile app"
+                  width="360"
+                  loading="lazy"
               /></a>
             </li>
             <li class="examples-item">
               <a href="" class="link examples-link"
                 ><img
                   class="example-image"
-                srcset="./images/examples/examples3_360.jpg 1x,
-                ./images/examples/examples3_360.jpg 2x"
-                src="./images/examples/examples3_360.jpg"
-                alt="site and mobile app"
-                width="360"
-                loading="lazy"
+                  srcset="
+                    ./images/examples/examples3_360.jpg 1x,
+                    ./images/examples/examples3_360.jpg 2x
+                  "
+                  src="./images/examples/examples3_360.jpg"
+                  alt="site and mobile app"
+                  width="360"
+                  loading="lazy"
               /></a>
             </li>
           </ul>
@@ -669,71 +674,85 @@
     </div>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu" type="button">
-          <svg class="modal-close" width="8" height="8" data-modal-close>
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
+      <button
+        class="menu-toggle js-close-menu mobile-menu-close-btn"
+        type="button"
+      >
+        <svg class="modal-close" width="8" height="8" data-modal-close>
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
 
-      <ul class="mobile-menu">
+      <ul class="mobile-menu list">
         <li><a class="mobile-menu-link link" href="./index.html">Studio</a></li>
-        <li><a class="mobile-menu-link link" href="./portfolio.html">Portfolio</aclass=></li>
-        <li><a class="mobile-menu-link link" href="" >Contacts</a></li>
-        <li><a class="mobile-menu-link-tel  ink" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a></li>
-        <li><a class="mobile-menu-link-email link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a</li>
+        <li>
+          <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li><a class="mobile-menu-link link" href="">Contacts</a></li>
+
+        <li>
+          <a class="mobile-menu-link-tel link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a
+            class="mobile-menu-link-email link"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
       </ul>
-      <ul class="team-social-buttons list">
-                <li class="team-social-button">
-                  <a href="" class="team-social-link">
-                    <svg
-                      class="team-icon-social"
-                      width="24"
-                      height="24"
-                      aria-label="Instagram"
-                    >
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-social-button">
-                  <a href="" class="team-social-link">
-                    <svg
-                      class="team-icon-social"
-                      width="24"
-                      height="24"
-                      aria-label="Twitter"
-                    >
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-social-button">
-                  <a href="" class="team-social-link">
-                    <svg
-                      class="team-icon-social"
-                      width="24"
-                      height="24"
-                      aria-label="Facebook"
-                    >
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-social-button">
-                  <a href="" class="team-social-link">
-                    <svg
-                      class="team-icon-social"
-                      width="24"
-                      height="24"
-                      aria-label="LinkedIn"
-                    >
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+      <ul class="mobile-menu-social-buttons list">
+        <li class="mobile-menu-social-button">
+          <a href="" class="team-social-link">
+            <svg
+              class="team-icon-social"
+              width="24"
+              height="24"
+              aria-label="Instagram"
+            >
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-button">
+          <a href="" class="team-social-link">
+            <svg
+              class="team-icon-social"
+              width="24"
+              height="24"
+              aria-label="Twitter"
+            >
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-button">
+          <a href="" class="team-social-link">
+            <svg
+              class="team-icon-social"
+              width="24"
+              height="24"
+              aria-label="Facebook"
+            >
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-button">
+          <a href="" class="team-social-link">
+            <svg
+              class="team-icon-social"
+              width="24"
+              height="24"
+              aria-label="LinkedIn"
+            >
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
 
     <script src="./js/modal.js"></script>
@@ -743,6 +762,6 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="./js/mobile.menu.js"></script>
   </body>
 </html>
