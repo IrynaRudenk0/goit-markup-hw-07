@@ -398,13 +398,12 @@ background-image: linear-gradient(to top,
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin: 0 auto;
-                gap: 72px 24px;
+        /* margin: 0 auto; */
+        gap: 72px 24px;
     }    
 
     .strength-item {
         width: 356px;
-
     }
 
     .strength-text {
@@ -902,6 +901,7 @@ background-image: linear-gradient(to top,
 @media screen and (min-width:768px) {
 .footer-wrapper {
     text-align: left;
+    width: 552px;
 }
 
 .footer-tab {
@@ -911,6 +911,7 @@ background-image: linear-gradient(to top,
 .footer-block {
     margin-right: 24px;
     width: 264px;
+    margin-bottom: 72px;
 }
 
 .footer-social {
