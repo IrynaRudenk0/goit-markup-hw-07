@@ -76,7 +76,6 @@ background-color: var(--pressed-state-color);
 
 @media screen and (min-width: 320px) {
     .container {
-        min-width: 320px;
         max-width: 428px;
         padding: 0 16px;
     }
@@ -299,6 +298,15 @@ background-image: linear-gradient(to top,
     }
 }
 
+@media screen and (max-width: 768px) {
+    .hero {
+        padding-top: 112px;
+        padding-bottom: 112px;
+        padding-left: 54px;
+        padding-right: 54px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .hero-title {
         font-size: 56px;
@@ -440,9 +448,14 @@ background-image: linear-gradient(to top,
 @media screen and (min-width:1200px) {
     .strength-item {
     width: 264px;
-
+    }
+    .strength {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 }
 
+@media screen and (min-width:768px) and (max-width:1199px) {
 .strength-list
 {
         display: flex;
@@ -453,11 +466,18 @@ background-image: linear-gradient(to top,
     }
 }
 
+/* @media screen and (max-width:767px) {
+.strength-list {
+    flex-direction: column;
+}
+} */
 
 @media screen and (max-width:1199px) {
     .strength-text {
         font-weight: 500;
     }
+
+
 }
 
 .strength-block {
@@ -472,7 +492,8 @@ background-image: linear-gradient(to top,
 @media screen and (max-width:1199px) {
     .strength-block {
         display: none;
-    }          
+    }       
+  
 }
 
 
@@ -517,8 +538,9 @@ background-image: linear-gradient(to top,
     justify-content: center;
 }
 
-        .team-member-title {
+.team-member-title {
             font-size: 20px;
+            font-weight: 500;
         }
 
 @media screen and (min-width:320px) {
@@ -564,14 +586,6 @@ background-image: linear-gradient(to top,
 
 }
 
-/* @media screen and (min-width:428px) {
-    .team-member {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-} */
 
 @media screen and (max-width:767.98px) {
 .team-member:not(:last-child) {
@@ -593,10 +607,9 @@ background-image: linear-gradient(to top,
         justify-content: center;
         gap: 72px 24px;
     }
-/* 
-    .team-member:not(-n+2) {
-        margin-bottom: 64px;
-    } */
+.team {
+    padding-bottom: 104px;
+}
 }
 .team .section-text {
     text-align: center;
@@ -613,9 +626,11 @@ background-image: linear-gradient(to top,
 } */
 
 @media screen and (min-width:1200px) {
-                .team-member-title {
-                    font-size: 36px;
-                }
+    .team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
             }
 
 .team-image {
@@ -659,7 +674,11 @@ background-image: linear-gradient(to top,
     fill: var(--white-color);
 }
 
-
+.team-member-position {
+    font-size: 16px;
+    line-height: calc(24/16);
+    font-weight: 400;
+}
 
 /* customers */
 
@@ -697,9 +716,7 @@ background-image: linear-gradient(to top,
     justify-content: center;
 }
 
-.customers-item {
-    width: 168px;
-}
+
 
 .customers-link {
     display: flex;
@@ -724,9 +741,10 @@ background-image: linear-gradient(to top,
 @media screen and (min-width:320px) and (max-width:479px) {
     .customers-list {
     width:100%;
-    gap: 16px;}
+    gap: 16px;
+}
     .customers-item {
-    flex-basis: calc(100% - 16px)/2;
+    min-width: calc((100% - 16px)/2);
     }
 }
 
@@ -744,7 +762,11 @@ background-image: linear-gradient(to top,
     }
     }
 
-
+@media screen and (min-width:768px) {
+        .customers-item {
+            width: 168px;
+        }
+    }
 @media screen and (min-width:768px) and (max-width:1199.98px) {
     .customers-list {
         /* max-width: 552px; */
@@ -947,7 +969,6 @@ background-image: linear-gradient(to top,
 
 .footer-tab {
     display: flex;
-    margin-bottom: 72px;
 }
 
 .footer-block {
@@ -962,6 +983,12 @@ background-image: linear-gradient(to top,
 
 .footer-form-button {
     margin-left: 24px;
+}
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+.footer-tab {
+    margin-bottom: 72px;
 }
 }
 
@@ -1138,7 +1165,7 @@ background-image: linear-gradient(to top,
     transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     width: 408px;
-    height: 584px;
+    min-height: 584px;
     padding: 72px 24px 24px;
     background-color: #fcfcfc;
     box-shadow: 
@@ -1337,6 +1364,15 @@ background-image: linear-gradient(to top,
 .modal-btn:hover,
 .modal-btn:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width:320px) {
+    .modal {
+        width: 95%;
+    }
+    .checkbox-text {
+    margin-left: 10px;
+}
 }
 
 /* mobile menu */
