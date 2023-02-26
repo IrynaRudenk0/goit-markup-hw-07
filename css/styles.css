@@ -726,7 +726,7 @@ background-image: linear-gradient(to top,
     width:100%;
     gap: 16px;}
     .customers-item {
-    flex-basis: calc(100% - 16px) / 2;
+    flex-basis: calc(100% - 16px)/2;
     }
 }
 
