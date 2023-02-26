@@ -724,8 +724,9 @@ background-image: linear-gradient(to top,
 @media screen and (min-width:320px) and (max-width:479px) {
     .customers-list {
     width:100%;
-    gap: 16px;
-    flex-basis: calc(100% - 16) / 2;
+    gap: 16px;}
+    .customers-item {
+    flex-basis: calc(100% - 16px) / 2;
     }
 }
 
