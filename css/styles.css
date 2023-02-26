@@ -419,16 +419,16 @@ background-image: linear-gradient(to top,
     .strength-list {
         display: flex;
         flex-wrap: wrap;
-        /* gap: 72px 24px; */
+        gap: 72px 24px;
     }    
 
     .strength-item {
-        width: calc(((100%-32)-24)/2);
+        width: calc(((100%-32px)-24px)/2);
     }
 
-        .strength-item:nth-child(-n+2) {
+        /* .strength-item:nth-child(-n+2) {
             margin-bottom: 72px;
-        }
+        } */
 
     .strength-text {
         line-height: 1.5;
@@ -1415,7 +1415,9 @@ background-image: linear-gradient(to top,
 
 @media screen and (min-width:320px) and (max-width:479px) {
     .mobile-menu-link-tel {
-        min-width: none;width:100%;
+        min-width: 320px;
+        width:100%;
+        font-size: 30px;
     }
 }
 
