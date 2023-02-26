@@ -99,7 +99,7 @@ background-color: var(--pressed-state-color);
 
 .header {
     padding-top: var(--indent);
-    padding-bottom: 10px;
+padding-bottom: var(--indent);
     border-bottom: 1px solid var(--accent-color);
 }
 
@@ -189,6 +189,14 @@ background-color: var(--pressed-state-color);
     .header-wrapper {
         justify-content: left;
     }
+
+    
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+.header {
+    padding-bottom: 10px;
+}
 }
 
 @media screen and (min-width:1200px) {
